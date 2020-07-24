@@ -1,0 +1,631 @@
+/*
+Theme Name: Edification Hub
+Theme URI: https://wenthemes.com/item/wordpress-themes/edification-hub/
+Author: WEN Themes
+Author URI: https://wenthemes.com/
+Description: Edification Hub is a responsive Education WordPress theme designed specially with education websites in mind. It is a child theme of Education Hub, another popular education theme. It includes all the core features introduced in Education Hub. However, when it comes to design, Edification Hub comes with more clarity and responsiveness. This theme is a clean and modern Education WordPress Theme that provides a simplistic yet unique look and feel. The sections are well-sorted which helps you display your strengths aesthetically. You can use the theme for all types of academic institutions like colleges, universities, schools, learning blogs, and more. Along with the neat and clean design, Edification Hub is power-packed with fantastic features and assets. It comes with top-notch features like Featured Slider, Custom Widget, Header Media, Custom Menu, Site Layout Options, and more. Also, if you want some unique changes on your site, you can use the Custom CSS field. Even though it is focused on education, you can also use Edification Hub for Corporates and Blogging Sites. The theme is absolutely responsive and your site will look amazing across all devices. Official Support Forum: https://themepalace.com/support-forum/ Full Demo: https://wenthemes.com/theme-demos/?demo=edification-hub
+Template: education-hub
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: edification-hub
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, translation-ready, theme-options, threaded-comments, education, footer-widgets, blog, custom-logo, editor-style, custom-header, rtl-language-support
+*/
+
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+#tophead .container:before,
+#tophead .container:after {
+    content: "";
+    display: table;
+}
+
+#tophead .container:after {
+    clear: both;
+}
+
+
+/*--------------------------------------------------------------
+# Header Top
+--------------------------------------------------------------*/
+
+#tophead {
+    padding-bottom: 10px;
+}
+
+#quick-contact {
+    padding-top: 0;
+}
+
+#quick-contact>ul {
+    text-align: left;
+}
+
+#quick-contact>ul,
+.top-news,
+.quick-links {
+    margin-top: 10px;
+}
+
+#quick-contact li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.quick-links {
+    margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#masthead,
+#page #masthead {
+    padding: 21px 0;
+}
+
+.site-layout-boxed #masthead,
+.site-layout-boxed #page #masthead {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#site-identity {
+    margin-top: 0;
+}
+
+.site-header {
+    min-height: auto;
+}
+
+.site-description {
+    font-size: 13px;
+}
+
+.main-nav-search {
+    padding: 10px 20px 20px;
+}
+
+.main-nav-search .search-form {
+    max-width: 100%;
+}
+
+.search-form input.search-field,
+.woocommerce-product-search .search-field {
+    padding: 10px 90px 10px 10px;
+}
+
+#main-nav,
+.menu-toggle i {
+    border: none;
+}
+
+.menu-toggle {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 8px 10px 10px 10px;
+}
+
+.menu-toggle .fa {
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    width: 19px;
+    height: 19px;
+}
+
+.main-navigation ul li a {
+    font-weight: 600;
+    padding: 10px 20px;
+    border-right: none;
+}
+
+.site-header .container,
+.site-branding,
+#main-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.site-header .container,
+.site-branding {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.site-header .container,
+#main-nav {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.site-layout-boxed #main-nav {
+    margin: 0 0 0 auto;
+    width: auto;
+}
+
+.site-header .container {
+    position: relative;
+}
+
+.site-branding {
+    /* Avoid overflowing wide custom logo in small screens in Firefox and IEs */
+    margin-right: auto;
+    max-width: 100%;
+    min-width: 0;
+    text-align: left;
+    width: auto;
+    overflow: hidden;
+}
+
+#main-nav {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: auto;
+}
+
+.main-navigation {
+    display: inline-block;
+    float: left;
+}
+
+.search-toggle {
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 0;
+}
+
+.search-toggle:hover,
+.search-toggle:focus {
+    border-radius: 0;
+}
+
+.search-form input.search-field,
+.woocommerce-product-search .search-field,
+.search-form .search-submit,
+.woocommerce-product-search button,
+#main-slider .cycle-prev::after,
+#main-slider .cycle-next::after {
+    border-radius: 0;
+}
+
+#primary-search-form .search-submit:focus {
+    opacity: 0.9;
+    outline: thin dotted;
+}
+
+.main-navigation ul ul {
+    box-shadow: none;
+}
+
+.main-navigation ul ul a {
+    border-bottom: none;
+}
+
+.main-navigation ul li:first-child>a {
+    border-left: none;
+}
+
+
+/*--------------------------------------------------------------
+# Other Sections
+--------------------------------------------------------------*/
+
+
+/* Scroll Up */
+
+.scrollup {
+    padding: 6px 7px 9px 8px;
+}
+
+
+/* Featured Slider */
+
+#main-slider .cycle-prev,
+#main-slider .cycle-next {
+    bottom: auto;
+    padding: 0;
+}
+
+#main-slider .cycle-caption {
+    border-radius: 0;
+    border-right: 0;
+    padding: 5px 10px;
+    max-width: 65%;
+    width: auto;
+}
+
+#main-slider .cycle-prev,
+#main-slider .cycle-next,
+#main-slider .cycle-caption {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#main-slider .cycle-prev::after {
+    padding: 4px 10px 4px 8px;
+}
+
+#main-slider .cycle-next::after {
+    padding: 4px 8px 4px 10px;
+}
+
+
+/* Featured Content */
+
+#featured-content img,
+#featured-news-events img {
+    width: 100%;
+}
+
+
+/* Archive */
+
+.entry-header .entry-meta {
+    padding: 0;
+}
+
+.archive #content .hentry,
+.blog #content .hentry,
+.search-results #content .hentry {
+    margin-bottom: 25px;
+}
+
+.wrap-menu-content {
+    top: 65px;
+    left: auto;
+    right: 0;
+}
+
+.menu-label,
+.primary-search-wrapper {
+    display: none;
+}
+
+
+/*--------------------------------------------------------------
+# Responsive Style
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 480px) {
+    #main-slider .cycle-prev,
+    #main-slider .cycle-prev:hover,
+    #main-slider .cycle-prev:focus {
+        left: 0;
+    }
+    #main-slider .cycle-next,
+    #main-slider .cycle-next:hover,
+    #main-slider .cycle-next:focus {
+        right: 0;
+    }
+    #main-slider .cycle-caption h3 {
+        margin-bottom: 0;
+    }
+    #main-slider .cycle-caption p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .menu-label {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .menu-toggle {
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #tophead {
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+    .top-news {
+        float: right;
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .quick-links {
+        margin: 10px auto 0;
+        text-align: center;
+        width: 100%;
+    }
+    .quick-links a.links-btn {
+        float: none;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .quick-links>ul {
+        width: 50%;
+        top: 100%;
+    }
+    .quick-links:hover ul,
+    .quick-links.focus ul {
+        right: 25%;
+    }
+    .header-social-wrapper {
+        margin-top: 10px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .header-social-wrapper .education_hub_widget_social {
+        width: 100%;
+        text-align: center;
+    }
+    .education_hub_widget_social li {
+        display: inline-block;
+        float: none;
+    }
+    .site-branding {
+        display: block;
+        margin: 0 auto;
+    }
+    #main-nav {
+        margin-top: 15px;
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .site-layout-boxed #main-nav {
+        margin: 15px auto 0;
+    }
+    .main-nav-search {
+        display: none;
+    }
+    .main-navigation ul li li.menu-item-has-children>a::after,
+    .main-navigation ul li li.page_item_has_children>a::after {
+        content: "\f104";
+    }
+    .main-navigation ul li:hover>ul,
+    .main-navigation ul li.focus>ul {
+        left: auto;
+        right: 0;
+    }
+    .main-navigation ul ul li:hover>ul,
+    .main-navigation ul ul li.focus>ul {
+        left: auto;
+        right: 100%;
+    }
+    .primary-search-wrapper {
+        display: inline-block;
+        float: left;
+    }
+    .main-nav-container {
+        position: relative;
+    }
+    .search-box-wrap {
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 360px;
+        z-index: 999;
+    }
+    .primary-search-wrapper .search-toggle {
+        display: block;
+    }
+    .primary-search-wrapper .search-toggle {
+        height: 44px;
+        width: 44px;
+    }
+    .primary-search-wrapper .search-box-wrap,
+    .primary-search-wrapper .fa-close,
+    .primary-search-wrapper.toggled-on .fa-search {
+        display: none;
+    }
+    .primary-search-wrapper.toggled-on .search-box-wrap,
+    .primary-search-wrapper.toggled-on .fa-close {
+        display: block;
+    }
+    #main-slider .cycle-caption {
+        max-width: 550px;
+    }
+    #main-slider .cycle-caption h3 {
+        margin-bottom: 5px;
+    }
+    #main-slider .cycle-caption p {
+        display: block;
+    }
+    #main-slider .cycle-prev {
+        left: -11px;
+    }
+    #main-slider .cycle-next {
+        right: -11px;
+    }
+    #main-slider .cycle-prev::after {
+        padding: 15px 20px 15px 25px;
+    }
+    #main-slider .cycle-next::after {
+        padding: 15px 25px 15px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #tophead {
+        padding: 5px 0;
+    }
+    .top-news {
+        float: left;
+    }
+    #quick-contact ul+.top-news {
+        border-left: 1px solid;
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+    #quick-contact>ul,
+    .top-news {
+        margin-top: 8px;
+    }
+    .quick-links,
+    .header-social-wrapper {
+        margin: 0;
+        width: auto;
+    }
+    .quick-links a.links-btn {
+        width: 135px;
+        margin: 3px 0;
+    }
+    .quick-links>ul {
+        width: 220px;
+        text-align: left;
+    }
+    .quick-links:hover ul,
+    .quick-links.focus ul {
+        right: 0;
+    }
+    .education_hub_widget_social li {
+        float: left;
+    }
+    #main-slider .cycle-caption {
+        padding: 24px;
+    }
+    #main-slider .cycle-caption h3 {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 1112px) {
+    #masthead,
+    #page #masthead {
+        padding: 21px 0;
+    }
+    .site-branding {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 0;
+    }
+    #main-nav {
+        margin-top: 0;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        width: auto;
+    }
+    .site-layout-boxed #main-nav {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #masthead,
+    #page #masthead {
+        padding: 28px 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #masthead,
+    #page #masthead {
+        padding: 35px 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+
+#main-nav {
+    background-color: transparent;
+}
+
+.site-header {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+a:hover,
+a:focus {
+    color: #ffab1f;
+}
+
+.search-toggle {
+    color: #444;
+}
+
+.search-toggle:hover,
+.search-toggle:focus,
+.toggled-on .search-toggle,
+.menu-toggle:hover,
+.menu-toggle:focus,
+.toggled-on .menu-toggle,
+.main-navigation ul,
+.main-navigation ul ul,
+.main-nav-search,
+.search-box-wrap {
+    background-color: #f4a024;
+}
+
+.main-navigation ul a {
+    border-bottom: none;
+}
+
+#main-slider .cycle-caption {
+    border-left: 4px solid #f4a024;
+}
+
+.search-toggle:hover,
+.search-toggle:focus,
+.toggled-on .search-toggle,
+.menu-toggle,
+.menu-toggle:hover,
+.menu-toggle:focus,
+.main-navigation ul ul li a {
+    color: #fff;
+}
+
+#tophead,
+.site-footer,
+#footer-widgets,
+.menu-toggle {
+    background-color: #0f8a8a;
+}
+
+.main-navigation ul li a:hover,
+.main-navigation ul li a:focus,
+.main-navigation ul li.current_page_item a,
+.main-navigation ul li.current-menu-item a,
+.main-navigation ul ul li a:hover,
+.main-navigation ul ul li a:focus {
+    background-color: #294a70;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .main-navigation ul li a {
+        color: #444;
+    }
+    .main-navigation ul li a:hover,
+    .main-navigation ul li a:focus,
+    .main-navigation ul li.current_page_item a,
+    .main-navigation ul li.current-menu-item a {
+        background-color: #f4a024;
+        color: #fff;
+    }
+    .main-navigation ul li.current_page_item a,
+    .main-navigation ul li.current-menu-item a,
+    .main-navigation ul ul li a:hover,
+    .main-navigation ul ul li a:focus {
+        background-color: #294a70;
+        color: #fff;
+    }
+}
